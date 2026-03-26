@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+@theme {
+  --color-lp-primary: #0F5736;
+  --color-lp-surface-tint: #469666;
+  --color-lp-on-primary: #FFFFFF;
+  --color-lp-primary-container: #469666;
+  --color-lp-on-primary-container: #FFFFFF;
+  --color-lp-secondary: #4F626E;
+  --color-lp-on-secondary: #FFFFFF;
+  --color-lp-secondary-container: #D2E4F2;
+  --color-lp-on-secondary-container: #3B4D58;
+  --color-lp-tertiary: #61597D;
+  --color-lp-on-tertiary: #FFFFFF;
+  --color-lp-tertiary-container: #E7DEFC;
+  --color-lp-on-tertiary-container: #4A4264;
+  --color-lp-error: #BA1A1A;
+  --color-lp-on-error: #FFFFFF;
+  --color-lp-error-container: #FFDAD6;
+  --color-lp-on-error-container: #410002;
+  --color-lp-background: #F6FAFE;
+  --color-lp-on-background: #181C1F;
+  --color-lp-surface: #F6FAFE;
+  --color-lp-on-surface: #181C1F;
+  --color-lp-surface-variant: #DCE3E9;
+  --color-lp-on-surface-variant: #41484D;
+  --color-lp-outline: #71787D;
+  --color-lp-outline-variant: #C0C7CD;
+  --color-lp-shadow: #000000;
+  --color-lp-scrim: #000000;
+  --color-lp-inverse-surface: #2D3134;
+  --color-lp-inverse-on-surface: #EEF1F6;
+  --color-lp-inverse-primary: #85D6A0;
+  --color-lp-primary-fixed: #85D6A0;
+  --color-lp-on-primary-fixed: #002111;
+  --color-lp-primary-fixed-dim: #6AC98E;
+  --color-lp-on-primary-fixed-variant: #256A41;
+  --color-lp-secondary-fixed: #D2E4F2;
+  --color-lp-on-secondary-fixed: #0A1E28;
+  --color-lp-secondary-fixed-dim: #B6C8D6;
+  --color-lp-on-secondary-fixed-variant: #374A55;
+  --color-lp-tertiary-fixed: #E7DEFC;
+  --color-lp-on-tertiary-fixed: #1D1736;
+  --color-lp-tertiary-fixed-dim: #CACAFA;
+  --color-lp-on-tertiary-fixed-variant: #4A4264;
+  --color-lp-surface-dim: #D6D9DE;
+  --color-lp-surface-bright: #F6FAFE;
+  --color-lp-surface-container-lowest: #FFFFFF;
+  --color-lp-surface-container-low: #F0F4F8;
+  --color-lp-surface-container: #EAEFF3;
+  --color-lp-surface-container-high: #E5E9ED;
+  --color-lp-surface-container-highest: #DFE3E8;
+}
+
+@layer base {
+  body {
+    background-color: var(--color-lp-surface);
+    color: var(--color-lp-on-surface);
+  }
+}
