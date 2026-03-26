@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 
 export default function App() {
   const onNavigate = (path: string) => {
@@ -65,19 +65,25 @@ export default function App() {
               Para Imobiliárias e Times de Alta Performance
             </span>
             <h1 className="text-5xl md:text-6xl font-extrabold tracking-tight text-lp-on-surface leading-[1.1] mb-6">
-              Análise de Crédito e Antecedentes <span className="text-lp-primary italic">em Segundos.</span> Sem Contratos Abusivos.
+              Feche Aluguéis e Vendas <span className="text-lp-primary italic">Mais Rápido.</span> Análise de Crédito em Segundos.
             </h1>
             <p className="text-lg text-lp-secondary leading-relaxed mb-10 max-w-xl">
-              Consulte CPFs e CNPJs em massa. Pague apenas pelo que usar no Pix, ou assine para ter relatórios em PDF com a sua logo direto no WhatsApp.
+              Acesso instantâneo a CPFs, CNPJs, Serasa e antecedentes criminais. Sem taxa de adesão ou fidelidade. Insira créditos, pague apenas pelo que usar, e receba laudos em PDF no WhatsApp com a sua logo.
             </p>
             <div className="flex flex-wrap gap-4 mb-8">
               <button 
                 onClick={() => onNavigate('/register')}
                 className="bg-gradient-to-br from-lp-primary to-lp-primary-container text-white px-10 py-4 rounded-full font-bold text-lg shadow-xl shadow-lp-primary/20 hover:translate-y-[-2px] transition-all cursor-pointer"
               >
-                Criar Conta Grátis
+                Criar Conta e Testar Agora
               </button>
-              <button className="px-10 py-4 rounded-full font-bold text-lg text-lp-secondary hover:bg-lp-surface-container-high transition-all cursor-pointer">
+              <button 
+                onClick={() => {
+                  const pricing = document.getElementById('pricing');
+                  pricing?.scrollIntoView({ behavior: 'smooth' });
+                }}
+                className="px-10 py-4 rounded-full font-bold text-lg text-lp-secondary hover:bg-lp-surface-container-high transition-all cursor-pointer"
+              >
                 Ver Preços
               </button>
             </div>
@@ -227,16 +233,16 @@ export default function App() {
               </div>
               <h3 className="text-xl font-bold text-lp-on-surface">Processamento em Lote</h3>
               <p className="text-lp-secondary leading-relaxed">
-                Esqueça digitar um por um. Suba planilhas com milhares de CPFs e receba todos os resultados formatados em minutos.
+                Feiras e eventos de lançamento? Suba planilhas com centenas de prospectos e deixe o sistema processar tudo de uma vez sem travar.
               </p>
             </div>
             <div className="flex flex-col items-start gap-6 group">
               <div className="w-14 h-14 rounded-2xl bg-lp-surface-container-high flex items-center justify-center text-lp-secondary group-hover:bg-lp-primary/10 group-hover:text-lp-primary transition-all">
                 <span className="material-symbols-outlined text-3xl">auto_fix_high</span>
               </div>
-              <h3 className="text-xl font-bold text-lp-on-surface">Automação White Label</h3>
+              <h3 className="text-xl font-bold text-lp-on-surface">Relatórios com a Sua Marca</h3>
               <p className="text-lp-secondary leading-relaxed">
-                Personalize os relatórios com sua logo e cores. Seus clientes recebem análises profissionais que valorizam sua marca.
+                Em vez de dizer que puxou do CapivaraCheck, enviamos os laudos em PDF ao WhatsApp do seu cliente ostentando a logo da sua imobiliária. Profissionalismo absoluto.
               </p>
             </div>
             <div className="flex flex-col items-start gap-6 group">
@@ -252,11 +258,11 @@ export default function App() {
         </section>
 
         {/* <!-- Pricing Section --> */}
-        <section className="bg-lp-surface py-32 px-6 overflow-hidden relative">
+        <section id="pricing" className="bg-lp-surface py-32 px-6 overflow-hidden relative">
           <div className="max-w-7xl mx-auto relative z-10">
             <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-5xl font-extrabold tracking-tight mb-4 text-[#1A2E35]">Escolha seus créditos e consulte agora</h2>
-              <p className="text-[#4F626E] text-base md:text-lg max-w-2xl mx-auto">Quanto maior o plano, mais bônus você recebe. Todos os créditos são válidos para qualquer tipo de consulta.</p>
+              <h2 className="text-3xl md:text-5xl font-extrabold tracking-tight mb-4 text-[#1A2E35]">Escalonável como o seu negócio. Sem letras miúdas.</h2>
+              <p className="text-[#4F626E] text-base md:text-lg max-w-2xl mx-auto">Recarregue sua carteira com Pix avulso quando precisar, ou assine um plano mensal para destravar bônus em caixa e funcionalidades exclusivas.</p>
               
               <div className="mt-8 inline-flex items-center p-1 bg-[#F2F4F6] rounded-full border border-gray-100">
                  <div className="px-5 py-2 rounded-full bg-[#1B3654] text-white font-bold text-sm shadow-sm flex items-center gap-1.5 cursor-pointer">
@@ -272,7 +278,7 @@ export default function App() {
               {/* <!-- Start --> */}
               <div className="bg-white p-7 rounded-3xl border border-gray-200 flex flex-col h-full shadow-sm hover:shadow-md transition-shadow">
                 <h4 className="text-2xl font-extrabold text-[#1A2E35] mb-1">Start</h4>
-                <p className="text-[13px] text-[#617482] mb-6 h-10 leading-snug">Ideal para iniciar suas consultas com vantagens</p>
+                <p className="text-[13px] text-[#617482] mb-6 h-10 leading-snug">Ideal para iniciar suas consultas com o pé direito</p>
                 <div className="flex items-baseline gap-1 mb-3">
                   <span className="text-base font-bold text-gray-400">R$</span>
                   <span className="text-5xl font-black text-[#1A2E35] tracking-tight">47</span>
@@ -284,19 +290,15 @@ export default function App() {
                 <ul className="space-y-4 mb-8 flex-grow">
                   <li className="flex items-start gap-3">
                     <span className="material-symbols-outlined text-blue-500 text-lg shrink-0 pt-0.5">check_circle</span>
-                    <span className="text-[13px] font-semibold text-[#4F626E] leading-tight">R$ 55 em créditos todo mês<br/><span className="text-[11px] font-medium opacity-80">(R$ 8 de bônus garantido)</span></span>
+                    <span className="text-[13px] font-semibold text-[#4F626E] leading-tight">Receba R$ 55 direto no seu saldo<br/><span className="text-[11px] font-medium opacity-80">(R$ 8,00 grátis garantidos)</span></span>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="material-symbols-outlined text-blue-500 text-lg shrink-0 pt-0.5">check_circle</span>
-                    <span className="text-[13px] font-semibold text-[#4F626E] leading-tight">Transforme indicações em dinheiro real<br/><span className="text-[11px] font-medium opacity-80">(saque R$ 10 + 10% pra cada indicado direto no PIX)</span></span>
+                    <span className="text-[13px] font-semibold text-[#4F626E] leading-tight">Acesso completo à aba Indique e Ganhe<br/><span className="text-[11px] font-medium opacity-80">(lucre R$ 10 por indicação direta + ganhos passivos)</span></span>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="material-symbols-outlined text-blue-500 text-lg shrink-0 pt-0.5">check_circle</span>
-                    <span className="text-[13px] font-semibold text-[#4F626E] leading-tight">Suporte VIP 24/7 no WhatsApp e acesso à Comunidade Exclusiva</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <span className="material-symbols-outlined text-blue-500 text-lg shrink-0 pt-0.5">check_circle</span>
-                    <span className="text-[13px] font-semibold text-[#4F626E] leading-tight">Sorteios semanais de créditos e 1 mês de plano Scale grátis</span>
+                    <span className="text-[13px] font-semibold text-[#4F626E] leading-tight">Suporte prioritário via WhatsApp e acesso à Comunidade VIP de Corretores</span>
                   </li>
                 </ul>
                 <button 
@@ -311,35 +313,31 @@ export default function App() {
               <div className="bg-white p-7 rounded-3xl border-2 border-[#0055FF] relative shadow-2xl shadow-[#0055FF]/20 flex flex-col h-full lg:scale-105 z-10 transition-transform">
                 <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-[#0055FF] text-white text-[10px] font-black uppercase tracking-widest px-4 py-1.5 rounded-full shadow-sm whitespace-nowrap">MAIS POPULAR</div>
                 <h4 className="text-2xl font-extrabold text-[#1A2E35] mb-1">Pro</h4>
-                <p className="text-[13px] text-[#617482] mb-6 h-10 leading-snug">Para quem consulta com frequência</p>
+                <p className="text-[13px] text-[#617482] mb-6 h-10 leading-snug">O pacote completo para volume diário de vendas</p>
                 <div className="flex items-baseline gap-1 mb-3">
                   <span className="text-base font-bold text-gray-400">R$</span>
                   <span className="text-5xl font-black text-[#1A2E35] tracking-tight">147</span>
                   <span className="text-sm font-bold text-gray-400">,00</span>
                 </div>
-                <div className="bg-green-100/70 text-green-700 text-[11px] font-bold px-2.5 py-1 rounded w-fit mb-8 flex items-center gap-1">
+                <div className="bg-blue-100/70 text-blue-700 text-[11px] font-bold px-2.5 py-1 rounded w-fit mb-8 flex items-center gap-1">
                   <span className="material-symbols-outlined text-[13px]">bolt</span> +R$ 30,00 BÔNUS
                 </div>
                 <ul className="space-y-4 mb-8 flex-grow">
                   <li className="flex items-start gap-3">
-                    <span className="material-symbols-outlined text-green-500 text-lg shrink-0 pt-0.5">check_circle</span>
-                    <span className="text-[13px] font-semibold text-[#4F626E] leading-tight">R$ 177 em créditos todo mês<br/><span className="text-[11px] font-medium opacity-80">(R$ 30 de bônus garantido)</span></span>
+                    <span className="material-symbols-outlined text-blue-500 text-lg shrink-0 pt-0.5">check_circle</span>
+                    <span className="text-[13px] font-semibold text-[#4F626E] leading-tight">Receba R$ 177 direto no seu saldo<br/><span className="text-[11px] font-medium opacity-80">(R$ 30,00 grátis garantidos)</span></span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <span className="material-symbols-outlined text-green-500 text-lg shrink-0 pt-0.5">check_circle</span>
-                    <span className="text-[13px] font-semibold text-[#4F626E] leading-tight">Receba relatórios automáticos no seu WhatsApp<br/><span className="text-[11px] font-medium opacity-80">(pronto para repassar ao cliente)</span></span>
+                    <span className="material-symbols-outlined text-blue-500 text-lg shrink-0 pt-0.5">check_circle</span>
+                    <span className="text-[13px] font-semibold text-[#4F626E] leading-tight">Motor de Automação Ativado:<br/><span className="text-[11px] font-medium opacity-80">O sistema dispara relatórios com sua logo direto no WhatsApp do seu cliente</span></span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <span className="material-symbols-outlined text-green-500 text-lg shrink-0 pt-0.5">check_circle</span>
-                    <span className="text-[13px] font-semibold text-[#4F626E] leading-tight">Nova fonte de renda: saque comissões de indicações no PIX</span>
+                    <span className="material-symbols-outlined text-blue-500 text-lg shrink-0 pt-0.5">check_circle</span>
+                    <span className="text-[13px] font-semibold text-[#4F626E] leading-tight">Acesso liberado para saque instantâneo de todas as suas comissões via Pix</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <span className="material-symbols-outlined text-green-500 text-lg shrink-0 pt-0.5">check_circle</span>
-                    <span className="text-[13px] font-semibold text-[#4F626E] leading-tight">Comunidade VIP, suporte 24/7 e sorteios exclusivos toda semana</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <span className="material-symbols-outlined text-green-500 text-lg shrink-0 pt-0.5">check_circle</span>
-                    <span className="text-[13px] font-semibold text-[#4F626E] leading-tight">Ferramenta de consulta em massa para otimizar seu tempo</span>
+                    <span className="material-symbols-outlined text-blue-500 text-lg shrink-0 pt-0.5">check_circle</span>
+                    <span className="text-[13px] font-semibold text-[#4F626E] leading-tight">Ferramenta ilimitada para checagem em massa (Planilha) inclusa</span>
                   </li>
                 </ul>
                 <button 
@@ -353,35 +351,31 @@ export default function App() {
               {/* <!-- Agência --> */}
               <div className="bg-white p-7 rounded-3xl border border-gray-200 flex flex-col h-full shadow-sm hover:shadow-md transition-shadow">
                 <h4 className="text-2xl font-extrabold text-[#1A2E35] mb-1">Agência</h4>
-                <p className="text-[13px] text-[#617482] mb-6 h-10 leading-snug">Para escritórios e times de vendas ativas</p>
+                <p className="text-[13px] text-[#617482] mb-6 h-10 leading-snug">Para escritórios consolidados e times produtivos</p>
                 <div className="flex items-baseline gap-1 mb-3">
                   <span className="text-base font-bold text-gray-400">R$</span>
                   <span className="text-5xl font-black text-[#1A2E35] tracking-tight">347</span>
                   <span className="text-sm font-bold text-gray-400">,00</span>
                 </div>
-                <div className="bg-green-100/70 text-green-700 text-[11px] font-bold px-2.5 py-1 rounded w-fit mb-8 flex items-center gap-1">
+                <div className="bg-blue-100/70 text-blue-700 text-[11px] font-bold px-2.5 py-1 rounded w-fit mb-8 flex items-center gap-1">
                   <span className="material-symbols-outlined text-[13px]">bolt</span> +R$ 60,00 BÔNUS
                 </div>
                 <ul className="space-y-4 mb-8 flex-grow">
                   <li className="flex items-start gap-3">
-                    <span className="material-symbols-outlined text-green-500 text-lg shrink-0 pt-0.5">check_circle</span>
-                    <span className="text-[13px] font-semibold text-[#4F626E] leading-tight">R$ 407 em créditos todo mês<br/><span className="text-[11px] font-medium opacity-80">(R$ 60 de bônus garantido)</span></span>
+                    <span className="material-symbols-outlined text-blue-500 text-lg shrink-0 pt-0.5">check_circle</span>
+                    <span className="text-[13px] font-semibold text-[#4F626E] leading-tight">Receba R$ 407 de saldo todo mês<br/><span className="text-[11px] font-medium opacity-80">(R$ 60,00 grátis garantidos)</span></span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <span className="material-symbols-outlined text-green-500 text-lg shrink-0 pt-0.5">check_circle</span>
-                    <span className="text-[13px] font-semibold text-[#4F626E] leading-tight">Agilize o fechamento: relatórios disparados direto no seu WhatsApp</span>
+                    <span className="material-symbols-outlined text-blue-500 text-lg shrink-0 pt-0.5">check_circle</span>
+                    <span className="text-[13px] font-semibold text-[#4F626E] leading-tight">Automação Premium:<br/><span className="text-[11px] font-medium opacity-80">Laudos completos processados e enviados no seu WhatsApp para encaminhamento rápido</span></span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <span className="material-symbols-outlined text-green-500 text-lg shrink-0 pt-0.5">check_circle</span>
-                    <span className="text-[13px] font-semibold text-[#4F626E] leading-tight">Libere o saque via PIX para todas as suas comissões de indicação</span>
+                    <span className="material-symbols-outlined text-blue-500 text-lg shrink-0 pt-0.5">check_circle</span>
+                    <span className="text-[13px] font-semibold text-[#4F626E] leading-tight">Ferramenta corporativa de processamento de lote (planilhas) sem limites</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <span className="material-symbols-outlined text-green-500 text-lg shrink-0 pt-0.5">check_circle</span>
-                    <span className="text-[13px] font-semibold text-[#4F626E] leading-tight">Acesso à nossa Comunidade VIP com suporte prioritário 24/7 e premiações</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <span className="material-symbols-outlined text-green-500 text-lg shrink-0 pt-0.5">check_circle</span>
-                    <span className="text-[13px] font-semibold text-[#4F626E] leading-tight">Consulta em massa ilimitada para grandes volumes</span>
+                    <span className="material-symbols-outlined text-blue-500 text-lg shrink-0 pt-0.5">check_circle</span>
+                    <span className="text-[13px] font-semibold text-[#4F626E] leading-tight">Status VIP e prioridade máxima de atendimento (Equipe Dedicada)</span>
                   </li>
                 </ul>
                 <button 
@@ -396,7 +390,7 @@ export default function App() {
               <div className="bg-[#111A24] text-white p-7 rounded-3xl flex flex-col h-full shadow-xl relative">
                 <div className="absolute top-6 right-6 bg-[#2B3945] text-white/80 text-[9px] font-bold uppercase tracking-widest px-3 py-1 rounded-full border border-white/5">PREMIUM TIER</div>
                 <h4 className="text-2xl font-extrabold mb-1">Scale</h4>
-                <p className="text-[13px] text-[#869BAA] mb-6 h-10 leading-snug max-w-[80%]">Máximo poder, menor custo por consulta</p>
+                <p className="text-[13px] text-[#869BAA] mb-6 h-10 leading-snug max-w-[80%]">Franquias e alto volume que não têm tempo a perder</p>
                 <div className="flex items-baseline gap-1 mb-3">
                   <span className="text-base font-bold text-gray-500">R$</span>
                   <span className="text-5xl font-black tracking-tight">747</span>
@@ -408,23 +402,23 @@ export default function App() {
                 <ul className="space-y-4 mb-8 flex-grow">
                   <li className="flex items-start gap-3">
                     <span className="material-symbols-outlined text-[#4ADE80] text-lg shrink-0 pt-0.5">check_circle</span>
-                     <span className="text-[13px] font-semibold text-[#E2E8F0] leading-tight">Desconto Exclusivo Vitalício:<br/><span className="text-[11px] font-medium opacity-70">Pague 10% a menos em TODAS as consultas</span></span>
+                     <span className="text-[13px] font-semibold text-[#E2E8F0] leading-tight">10% DE DESCONTO VITALÍCIO:<br/><span className="text-[11px] font-medium opacity-70">Pague mais barato em TODAS as consultas do balcão para sempre</span></span>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="material-symbols-outlined text-[#4ADE80] text-lg shrink-0 pt-0.5">check_circle</span>
-                    <span className="text-[13px] font-semibold text-[#E2E8F0] leading-tight">Automação White Label:<br/><span className="text-[11px] font-medium opacity-70">O relatório chega no WhatsApp do SEU cliente, com a SUA logo e nome</span></span>
+                    <span className="text-[13px] font-semibold text-[#E2E8F0] leading-tight">Automação White Label Total:<br/><span className="text-[11px] font-medium opacity-70">O relatório chega no WhatsApp do SEU cliente impresso com a SUA logo</span></span>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="material-symbols-outlined text-[#4ADE80] text-lg shrink-0 pt-0.5">check_circle</span>
-                    <span className="text-[13px] font-semibold text-[#E2E8F0] leading-tight">R$ 867 em créditos todo mês<br/><span className="text-[11px] font-medium opacity-70">(R$ 120 de bônus garantido)</span></span>
+                    <span className="text-[13px] font-semibold text-[#E2E8F0] leading-tight">Receba R$ 867 em caixa<br/><span className="text-[11px] font-medium opacity-70">(R$ 120 de super bônus garantido)</span></span>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="material-symbols-outlined text-[#4ADE80] text-lg shrink-0 pt-0.5">check_circle</span>
-                    <span className="text-[13px] font-semibold text-[#E2E8F0] leading-tight">Saque ilimitado de comissões PIX e acesso de Elite à Comunidade CapivaraCheck</span>
+                    <span className="text-[13px] font-semibold text-[#E2E8F0] leading-tight">Acesso Livre ao Saque de Comissões e à nossa Comunidade VIP de Elite</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="material-symbols-outlined text-[#4ADE80] text-lg shrink-0 pt-0.5">check_circle</span>
-                     <span className="text-[13px] font-semibold text-[#E2E8F0] leading-tight">Gerente de conta dedicado acompanhando sua operação</span>
+                     <span className="text-[13px] font-semibold text-[#E2E8F0] leading-tight">Gerente de conta dedicado acompanhando sua operação de perto</span>
                   </li>
                 </ul>
                 <button 
@@ -439,9 +433,9 @@ export default function App() {
             {/* <!-- Valor personalizado row --> */}
             <div className="mt-12 bg-white rounded-[2rem] p-6 lg:p-8 border border-gray-200 shadow-sm hover:shadow-md transition-shadow flex flex-col lg:flex-row items-center justify-between gap-6 max-w-4xl mx-auto">
               <div>
-                <h4 className="text-xl font-bold text-[#1A2E35] mb-2">Valor personalizado</h4>
+                <h4 className="text-xl font-bold text-[#1A2E35] mb-2">Quer usar apenas uma vez?</h4>
                 <p className="text-sm text-[#4F626E] font-medium">
-                  Escolha um valor a partir de R$ 30. Apenas via Pix. Sem bônus incluso.
+                  Escolha um valor a partir de R$ 10 via Pix (sem fidelidade e sem bônus adicionais).
                 </p>
               </div>
               <div className="flex w-full lg:w-auto gap-3 items-center">
@@ -449,7 +443,7 @@ export default function App() {
                   <div className="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
                      <span className="text-[#617482] font-black">R$</span>
                   </div>
-                  <input type="text" readOnly value="30" className="bg-[#F8FAFC] border border-gray-200 rounded-xl h-[52px] w-32 pl-12 pr-4 text-[#1A2E35] font-black text-lg focus:outline-none" />
+                  <input type="text" readOnly value="10" className="bg-[#F8FAFC] border border-gray-200 rounded-xl h-[52px] w-32 pl-12 pr-4 text-[#1A2E35] font-black text-lg focus:outline-none" />
                 </div>
                 <button 
                   onClick={() => onNavigate('/register')}
