@@ -1,11 +1,11 @@
 @import "tailwindcss";
 
 @theme {
-  --color-lp-primary: #0055FF;
-  --color-lp-surface-tint: #0055FF;
+  --color-lp-primary: #219653;
+  --color-lp-surface-tint: #219653;
   --color-lp-on-primary: #FFFFFF;
-  --color-lp-primary-container: #CCE0FF;
-  --color-lp-on-primary-container: #001A4D;
+  --color-lp-primary-container: #dcfce7;
+  --color-lp-on-primary-container: #14532d;
   --color-lp-secondary: #475569;
   --color-lp-on-secondary: #FFFFFF;
   --color-lp-secondary-container: #F1F5F9;

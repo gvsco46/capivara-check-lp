@@ -284,20 +284,20 @@ export default function App() {
                   <span className="text-5xl font-black text-[#1A2E35] tracking-tight">47</span>
                   <span className="text-sm font-bold text-gray-400">,00</span>
                 </div>
-                <div className="bg-blue-100/70 text-blue-700 text-[11px] font-bold px-2.5 py-1 rounded w-fit mb-8 flex items-center gap-1">
+                <div className="bg-green-100/70 text-green-700 text-[11px] font-bold px-2.5 py-1 rounded w-fit mb-8 flex items-center gap-1">
                   <span className="material-symbols-outlined text-[13px]">bolt</span> +R$ 8,00 BÔNUS
                 </div>
                 <ul className="space-y-4 mb-8 flex-grow">
                   <li className="flex items-start gap-3">
-                    <span className="material-symbols-outlined text-blue-500 text-lg shrink-0 pt-0.5">check_circle</span>
+                    <span className="material-symbols-outlined text-green-500 text-lg shrink-0 pt-0.5">check_circle</span>
                     <span className="text-[13px] font-semibold text-[#4F626E] leading-tight">Receba R$ 55 direto no seu saldo<br/><span className="text-[11px] font-medium opacity-80">(R$ 8,00 grátis garantidos)</span></span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <span className="material-symbols-outlined text-blue-500 text-lg shrink-0 pt-0.5">check_circle</span>
+                    <span className="material-symbols-outlined text-green-500 text-lg shrink-0 pt-0.5">check_circle</span>
                     <span className="text-[13px] font-semibold text-[#4F626E] leading-tight">Acesso completo à aba Indique e Ganhe<br/><span className="text-[11px] font-medium opacity-80">(lucre R$ 10 por indicação direta + ganhos passivos)</span></span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <span className="material-symbols-outlined text-blue-500 text-lg shrink-0 pt-0.5">check_circle</span>
+                    <span className="material-symbols-outlined text-green-500 text-lg shrink-0 pt-0.5">check_circle</span>
                     <span className="text-[13px] font-semibold text-[#4F626E] leading-tight">Suporte prioritário via WhatsApp e acesso à Comunidade VIP de Corretores</span>
                   </li>
                 </ul>
@@ -310,8 +310,8 @@ export default function App() {
               </div>
 
               {/* <!-- Pro --> */}
-              <div className="bg-white p-7 rounded-3xl border-2 border-[#0055FF] relative shadow-2xl shadow-[#0055FF]/20 flex flex-col h-full lg:scale-105 z-10 transition-transform">
-                <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-[#0055FF] text-white text-[10px] font-black uppercase tracking-widest px-4 py-1.5 rounded-full shadow-sm whitespace-nowrap">MAIS POPULAR</div>
+              <div className="bg-white p-7 rounded-3xl border-2 border-[#219653] relative shadow-2xl shadow-[#219653]/20 flex flex-col h-full lg:scale-105 z-10 transition-transform">
+                <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-[#219653] text-white text-[10px] font-black uppercase tracking-widest px-4 py-1.5 rounded-full shadow-sm whitespace-nowrap">MAIS POPULAR</div>
                 <h4 className="text-2xl font-extrabold text-[#1A2E35] mb-1">Pro</h4>
                 <p className="text-[13px] text-[#617482] mb-6 h-10 leading-snug">O pacote completo para volume diário de vendas</p>
                 <div className="flex items-baseline gap-1 mb-3">
@@ -319,30 +319,30 @@ export default function App() {
                   <span className="text-5xl font-black text-[#1A2E35] tracking-tight">147</span>
                   <span className="text-sm font-bold text-gray-400">,00</span>
                 </div>
-                <div className="bg-blue-100/70 text-blue-700 text-[11px] font-bold px-2.5 py-1 rounded w-fit mb-8 flex items-center gap-1">
+                <div className="bg-green-100/70 text-green-700 text-[11px] font-bold px-2.5 py-1 rounded w-fit mb-8 flex items-center gap-1">
                   <span className="material-symbols-outlined text-[13px]">bolt</span> +R$ 30,00 BÔNUS
                 </div>
                 <ul className="space-y-4 mb-8 flex-grow">
                   <li className="flex items-start gap-3">
-                    <span className="material-symbols-outlined text-blue-500 text-lg shrink-0 pt-0.5">check_circle</span>
+                    <span className="material-symbols-outlined text-green-500 text-lg shrink-0 pt-0.5">check_circle</span>
                     <span className="text-[13px] font-semibold text-[#4F626E] leading-tight">Receba R$ 177 direto no seu saldo<br/><span className="text-[11px] font-medium opacity-80">(R$ 30,00 grátis garantidos)</span></span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <span className="material-symbols-outlined text-blue-500 text-lg shrink-0 pt-0.5">check_circle</span>
+                    <span className="material-symbols-outlined text-green-500 text-lg shrink-0 pt-0.5">check_circle</span>
                     <span className="text-[13px] font-semibold text-[#4F626E] leading-tight">Motor de Automação Ativado:<br/><span className="text-[11px] font-medium opacity-80">O sistema dispara relatórios com sua logo direto no WhatsApp do seu cliente</span></span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <span className="material-symbols-outlined text-blue-500 text-lg shrink-0 pt-0.5">check_circle</span>
+                    <span className="material-symbols-outlined text-green-500 text-lg shrink-0 pt-0.5">check_circle</span>
                     <span className="text-[13px] font-semibold text-[#4F626E] leading-tight">Acesso liberado para saque instantâneo de todas as suas comissões via Pix</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <span className="material-symbols-outlined text-blue-500 text-lg shrink-0 pt-0.5">check_circle</span>
+                    <span className="material-symbols-outlined text-green-500 text-lg shrink-0 pt-0.5">check_circle</span>
                     <span className="text-[13px] font-semibold text-[#4F626E] leading-tight">Ferramenta ilimitada para checagem em massa (Planilha) inclusa</span>
                   </li>
                 </ul>
                 <button 
                   onClick={() => onNavigate('/register')}
-                  className="w-full py-3.5 rounded-xl bg-[#0055FF] text-white font-bold hover:bg-[#0044CC] transition-all shadow-lg shadow-[#0055FF]/20 cursor-pointer flex items-center justify-center gap-2 mt-auto"
+                  className="w-full py-3.5 rounded-xl bg-[#219653] text-white font-bold hover:bg-[#1e874b] transition-all shadow-lg shadow-[#219653]/20 cursor-pointer flex items-center justify-center gap-2 mt-auto"
                 >
                   <span className="material-symbols-outlined text-[18px]">open_in_new</span> Pagar com Cartão
                 </button>
@@ -357,24 +357,24 @@ export default function App() {
                   <span className="text-5xl font-black text-[#1A2E35] tracking-tight">347</span>
                   <span className="text-sm font-bold text-gray-400">,00</span>
                 </div>
-                <div className="bg-blue-100/70 text-blue-700 text-[11px] font-bold px-2.5 py-1 rounded w-fit mb-8 flex items-center gap-1">
+                <div className="bg-green-100/70 text-green-700 text-[11px] font-bold px-2.5 py-1 rounded w-fit mb-8 flex items-center gap-1">
                   <span className="material-symbols-outlined text-[13px]">bolt</span> +R$ 60,00 BÔNUS
                 </div>
                 <ul className="space-y-4 mb-8 flex-grow">
                   <li className="flex items-start gap-3">
-                    <span className="material-symbols-outlined text-blue-500 text-lg shrink-0 pt-0.5">check_circle</span>
+                    <span className="material-symbols-outlined text-green-500 text-lg shrink-0 pt-0.5">check_circle</span>
                     <span className="text-[13px] font-semibold text-[#4F626E] leading-tight">Receba R$ 407 de saldo todo mês<br/><span className="text-[11px] font-medium opacity-80">(R$ 60,00 grátis garantidos)</span></span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <span className="material-symbols-outlined text-blue-500 text-lg shrink-0 pt-0.5">check_circle</span>
+                    <span className="material-symbols-outlined text-green-500 text-lg shrink-0 pt-0.5">check_circle</span>
                     <span className="text-[13px] font-semibold text-[#4F626E] leading-tight">Automação Premium:<br/><span className="text-[11px] font-medium opacity-80">Laudos completos processados e enviados no seu WhatsApp para encaminhamento rápido</span></span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <span className="material-symbols-outlined text-blue-500 text-lg shrink-0 pt-0.5">check_circle</span>
+                    <span className="material-symbols-outlined text-green-500 text-lg shrink-0 pt-0.5">check_circle</span>
                     <span className="text-[13px] font-semibold text-[#4F626E] leading-tight">Ferramenta corporativa de processamento de lote (planilhas) sem limites</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <span className="material-symbols-outlined text-blue-500 text-lg shrink-0 pt-0.5">check_circle</span>
+                    <span className="material-symbols-outlined text-green-500 text-lg shrink-0 pt-0.5">check_circle</span>
                     <span className="text-[13px] font-semibold text-[#4F626E] leading-tight">Status VIP e prioridade máxima de atendimento (Equipe Dedicada)</span>
                   </li>
                 </ul>
