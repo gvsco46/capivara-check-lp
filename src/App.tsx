@@ -265,7 +265,7 @@ export default function App() {
               <p className="text-[#4F626E] text-base md:text-lg max-w-2xl mx-auto">Recarregue sua carteira com Pix avulso quando precisar, ou assine um plano mensal para destravar bônus em caixa e funcionalidades exclusivas.</p>
               
               <div className="mt-8 inline-flex items-center p-1 bg-[#F2F4F6] rounded-full border border-gray-100">
-                 <div className="px-5 py-2 rounded-full bg-[#1B3654] text-white font-bold text-sm shadow-sm flex items-center gap-1.5 cursor-pointer">
+                 <div className="px-5 py-2 rounded-full bg-[#14532D] text-white font-bold text-sm shadow-sm flex items-center gap-1.5 cursor-pointer">
                    Cartão <span className="text-[9px] bg-white/20 px-1 py-0.5 rounded border border-white/20 whitespace-nowrap">+ BÔNUS</span>
                  </div>
                  <div className="px-6 py-2 rounded-full text-[#4B5E70] font-semibold text-sm cursor-pointer hover:bg-white/50 transition-colors">
@@ -303,7 +303,7 @@ export default function App() {
                 </ul>
                 <button 
                   onClick={() => onNavigate('/register')}
-                  className="w-full py-3.5 rounded-xl border-2 border-[#1B3654]/20 text-[#1B3654] font-bold hover:bg-[#F2F4F6] transition-all cursor-pointer flex items-center justify-center gap-2 mt-auto"
+                  className="w-full py-3.5 rounded-xl border-2 border-[#14532D]/20 text-[#14532D] font-bold hover:bg-[#F2F4F6] transition-all cursor-pointer flex items-center justify-center gap-2 mt-auto"
                 >
                   <span className="material-symbols-outlined text-[18px]">open_in_new</span> Pagar com Cartão
                 </button>
@@ -380,15 +380,15 @@ export default function App() {
                 </ul>
                 <button 
                   onClick={() => onNavigate('/register')}
-                  className="w-full py-3.5 rounded-xl border-2 border-[#1B3654]/20 text-[#1B3654] font-bold hover:bg-[#F2F4F6] transition-all cursor-pointer flex items-center justify-center gap-2 mt-auto"
+                  className="w-full py-3.5 rounded-xl border-2 border-[#14532D]/20 text-[#14532D] font-bold hover:bg-[#F2F4F6] transition-all cursor-pointer flex items-center justify-center gap-2 mt-auto"
                 >
                   <span className="material-symbols-outlined text-[18px]">open_in_new</span> Pagar com Cartão
                 </button>
               </div>
 
               {/* <!-- Scale --> */}
-              <div className="bg-[#111A24] text-white p-7 rounded-3xl flex flex-col h-full shadow-xl relative">
-                <div className="absolute top-6 right-6 bg-[#2B3945] text-white/80 text-[9px] font-bold uppercase tracking-widest px-3 py-1 rounded-full border border-white/5">PREMIUM TIER</div>
+              <div className="bg-[#022C22] text-white p-7 rounded-3xl flex flex-col h-full shadow-xl relative">
+                <div className="absolute top-6 right-6 bg-[#064e3b] text-white/80 text-[9px] font-bold uppercase tracking-widest px-3 py-1 rounded-full border border-white/5">PREMIUM TIER</div>
                 <h4 className="text-2xl font-extrabold mb-1">Scale</h4>
                 <p className="text-[13px] text-[#869BAA] mb-6 h-10 leading-snug max-w-[80%]">Franquias e alto volume que não têm tempo a perder</p>
                 <div className="flex items-baseline gap-1 mb-3">
@@ -423,7 +423,7 @@ export default function App() {
                 </ul>
                 <button 
                   onClick={() => onNavigate('/register')}
-                  className="w-full py-3.5 rounded-xl bg-[#F59E0B] text-[#111A24] font-black hover:bg-[#D97706] transition-all cursor-pointer shadow-lg shadow-[#F59E0B]/10 flex items-center justify-center gap-2 mt-auto"
+                  className="w-full py-3.5 rounded-xl bg-[#F59E0B] text-[#022C22] font-black hover:bg-[#D97706] transition-all cursor-pointer shadow-lg shadow-[#F59E0B]/10 flex items-center justify-center gap-2 mt-auto"
                 >
                   <span className="material-symbols-outlined text-[18px]">open_in_new</span> Pagar com Cartão
                 </button>
