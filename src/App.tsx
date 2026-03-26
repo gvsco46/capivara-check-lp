@@ -31,19 +31,19 @@ export default function App() {
       `}</style>
       
       {/* TopNavBar */}
-      <nav className="fixed top-0 w-full z-50 bg-white/80 dark:bg-slate-950/80 backdrop-blur-xl shadow-sm dark:shadow-none font-sans antialiased tracking-tight">
+      <nav className="fixed top-0 w-full z-50 bg-[#0A1A3B]/95 backdrop-blur-xl shadow-lg border-b border-white/5 font-sans antialiased tracking-tight text-white">
         <div className="flex items-center justify-between px-6 py-4 max-w-7xl mx-auto">
-          <div className="text-xl font-bold tracking-tighter text-slate-900 dark:text-slate-50">CapivaraCheck</div>
+          <div className="text-xl font-bold tracking-tighter text-white">CapivaraCheck</div>
           <div className="hidden md:flex items-center space-gap-8 gap-8">
-            <a className="text-slate-600 dark:text-slate-400 font-medium hover:text-green-600 dark:hover:text-green-300 transition-colors" href="#">Soluções</a>
-            <a className="text-slate-600 dark:text-slate-400 font-medium hover:text-green-600 dark:hover:text-green-300 transition-colors" href="#">Preços</a>
-            <a className="text-slate-600 dark:text-slate-400 font-medium hover:text-green-600 dark:hover:text-green-300 transition-colors" href="#">API</a>
-            <a className="text-slate-600 dark:text-slate-400 font-medium hover:text-green-600 dark:hover:text-green-300 transition-colors" href="#">Sobre Nós</a>
+            <a className="text-white/70 font-medium hover:text-white transition-colors" href="#">Soluções</a>
+            <a className="text-white/70 font-medium hover:text-white transition-colors" href="#">Preços</a>
+            <a className="text-white/70 font-medium hover:text-white transition-colors" href="#">API</a>
+            <a className="text-white/70 font-medium hover:text-white transition-colors" href="#">Sobre Nós</a>
           </div>
           <div className="flex items-center gap-4">
             <button 
               onClick={() => onNavigate('/login')}
-              className="text-slate-600 dark:text-slate-400 font-medium scale-95 active:scale-100 transition-transform cursor-pointer hover:text-slate-900 dark:hover:text-white"
+              className="text-white/80 font-medium scale-95 active:scale-100 transition-transform cursor-pointer hover:text-white"
             >
               Login
             </button>
@@ -278,24 +278,24 @@ export default function App() {
                   <span className="text-5xl font-black text-[#1A2E35] tracking-tight">47</span>
                   <span className="text-sm font-bold text-gray-400">,00</span>
                 </div>
-                <div className="bg-green-100/70 text-green-700 text-[11px] font-bold px-2.5 py-1 rounded w-fit mb-8 flex items-center gap-1">
+                <div className="bg-blue-100/70 text-blue-700 text-[11px] font-bold px-2.5 py-1 rounded w-fit mb-8 flex items-center gap-1">
                   <span className="material-symbols-outlined text-[13px]">bolt</span> +R$ 8,00 BÔNUS
                 </div>
                 <ul className="space-y-4 mb-8 flex-grow">
                   <li className="flex items-start gap-3">
-                    <span className="material-symbols-outlined text-green-500 text-lg shrink-0 pt-0.5">check_circle</span>
+                    <span className="material-symbols-outlined text-blue-500 text-lg shrink-0 pt-0.5">check_circle</span>
                     <span className="text-[13px] font-semibold text-[#4F626E] leading-tight">R$ 55 em créditos todo mês<br/><span className="text-[11px] font-medium opacity-80">(R$ 8 de bônus garantido)</span></span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <span className="material-symbols-outlined text-green-500 text-lg shrink-0 pt-0.5">check_circle</span>
+                    <span className="material-symbols-outlined text-blue-500 text-lg shrink-0 pt-0.5">check_circle</span>
                     <span className="text-[13px] font-semibold text-[#4F626E] leading-tight">Transforme indicações em dinheiro real<br/><span className="text-[11px] font-medium opacity-80">(saque R$ 10 + 10% pra cada indicado direto no PIX)</span></span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <span className="material-symbols-outlined text-green-500 text-lg shrink-0 pt-0.5">check_circle</span>
+                    <span className="material-symbols-outlined text-blue-500 text-lg shrink-0 pt-0.5">check_circle</span>
                     <span className="text-[13px] font-semibold text-[#4F626E] leading-tight">Suporte VIP 24/7 no WhatsApp e acesso à Comunidade Exclusiva</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <span className="material-symbols-outlined text-green-500 text-lg shrink-0 pt-0.5">check_circle</span>
+                    <span className="material-symbols-outlined text-blue-500 text-lg shrink-0 pt-0.5">check_circle</span>
                     <span className="text-[13px] font-semibold text-[#4F626E] leading-tight">Sorteios semanais de créditos e 1 mês de plano Scale grátis</span>
                   </li>
                 </ul>
@@ -308,8 +308,8 @@ export default function App() {
               </div>
 
               {/* <!-- Pro --> */}
-              <div className="bg-white p-7 rounded-3xl border-2 border-green-500 relative shadow-2xl shadow-green-500/10 flex flex-col h-full lg:scale-105 z-10 transition-transform">
-                <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-[#1B3654] text-white text-[10px] font-black uppercase tracking-widest px-4 py-1.5 rounded-full shadow-sm whitespace-nowrap">MAIS POPULAR</div>
+              <div className="bg-white p-7 rounded-3xl border-2 border-[#0055FF] relative shadow-2xl shadow-[#0055FF]/20 flex flex-col h-full lg:scale-105 z-10 transition-transform">
+                <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-[#0055FF] text-white text-[10px] font-black uppercase tracking-widest px-4 py-1.5 rounded-full shadow-sm whitespace-nowrap">MAIS POPULAR</div>
                 <h4 className="text-2xl font-extrabold text-[#1A2E35] mb-1">Pro</h4>
                 <p className="text-[13px] text-[#617482] mb-6 h-10 leading-snug">Para quem consulta com frequência</p>
                 <div className="flex items-baseline gap-1 mb-3">
@@ -344,7 +344,7 @@ export default function App() {
                 </ul>
                 <button 
                   onClick={() => onNavigate('/register')}
-                  className="w-full py-3.5 rounded-xl bg-[#219653] text-white font-bold hover:bg-[#1e874b] transition-all shadow-lg shadow-green-500/20 cursor-pointer flex items-center justify-center gap-2 mt-auto"
+                  className="w-full py-3.5 rounded-xl bg-[#0055FF] text-white font-bold hover:bg-[#0044CC] transition-all shadow-lg shadow-[#0055FF]/20 cursor-pointer flex items-center justify-center gap-2 mt-auto"
                 >
                   <span className="material-symbols-outlined text-[18px]">open_in_new</span> Pagar com Cartão
                 </button>
